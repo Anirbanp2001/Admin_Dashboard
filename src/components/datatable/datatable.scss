@@ -1,0 +1,55 @@
+.datatable{
+    height: 500px;
+    padding: 20px;
+
+    .cellWithImg{
+        display: flex;
+        align-items: center;
+
+
+        .image{
+            height: 40px;
+            width: 40px;
+            border-radius:50%;
+            object-fit: cover;
+            margin: 20px;
+        }
+    }
+
+    .statusCur{
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 5px;
+
+        &.active{
+            background-color: rgb(158, 224, 158);
+            color: green;
+        }
+        &.passive{
+            background-color: rgb(228, 228, 175);
+            color: rgb(216, 177, 5);
+        }
+    }
+
+    .actions{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .view{
+            border: 1px solid skyblue;
+            color: skyblue;
+            padding: 5px;
+            border-radius: 5px;
+            
+        }
+        .delete{
+            border: 1px solid coral;
+            color: coral;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+    }
+}
